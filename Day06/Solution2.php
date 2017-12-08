@@ -27,4 +27,4 @@ do {
     $cycles = implode(',', $banks);
 } while (!in_array($cycles, $match));
 
-echo(count($match) + 1);
+echo count($results) - array_search($check, $results);
